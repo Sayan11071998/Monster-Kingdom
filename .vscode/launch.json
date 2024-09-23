@@ -1,0 +1,152 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch MonsterKingdom (Debug)",
+			"request": "launch",
+			"program": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "MonsterKingdom Win64 Debug Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch MonsterKingdom (DebugGame)",
+			"request": "launch",
+			"program": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "MonsterKingdom Win64 DebugGame Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch MonsterKingdom (Development)",
+			"request": "launch",
+			"program": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "MonsterKingdom Win64 Development Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch MonsterKingdom (Test)",
+			"request": "launch",
+			"program": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "MonsterKingdom Win64 Test Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch MonsterKingdom (Shipping)",
+			"request": "launch",
+			"program": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "MonsterKingdom Win64 Shipping Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch MonsterKingdomEditor (Debug)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+			"preLaunchTask": "MonsterKingdomEditor Win64 Debug Build",
+			"args": [
+				"C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\MonsterKingdom.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch MonsterKingdomEditor (DebugGame)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+			"preLaunchTask": "MonsterKingdomEditor Win64 DebugGame Build",
+			"args": [
+				"C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\MonsterKingdom.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.1"
+			}
+		},
+		{
+			"name": "Launch MonsterKingdomEditor (Development)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"preLaunchTask": "MonsterKingdomEditor Win64 Development Build",
+			"args": [
+				"C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\MonsterKingdom.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.1"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\MonsterKingdom.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "externalTerminal",
+			"stopAtEntry": false,
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.1"
+		}
+	]
+}

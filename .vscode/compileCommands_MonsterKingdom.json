@@ -1,0 +1,90 @@
+[
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\Enemy.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\Enemy.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\MainCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\MainCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\MonsterKingdom.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\MonsterKingdom.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\MonsterKingdom.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\MonsterKingdomGameModeBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\MonsterKingdomGameModeBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\Weapon.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\Source\\MonsterKingdom\\Weapon.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom\\MonsterKingdom.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	}
+]

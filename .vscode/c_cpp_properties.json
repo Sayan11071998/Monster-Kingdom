@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "MonsterKingdomEditor Editor Win64 Development (MonsterKingdom)",
+            "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_MonsterKingdom.json"
+        },
+        {
+            "name": "Win32",
+            "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\sayan\\Documents\\Projects\\MonsterKingdom\\.vscode\\compileCommands_Default.json"
+        }
+    ],
+    "version": 4
+}
