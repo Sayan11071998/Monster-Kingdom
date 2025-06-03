@@ -1,22 +1,55 @@
-# ***🚀 Monster Kingdom 🚀***
+# 👑🚀 Monster Kingdom 🚀👑
 
-I’m beyond excited (and slightly exhausted) to unveil my latest Unreal Engine 5 creation—Monster Kingdom! 👑 Enter a sprawling castle where danger hides behind every corner and monsters have clearly forgotten their manners. In this action-packed adventure, you’ll choose your weapon, face off against some seriously angry creatures, and try not to lose your sanity (or your health). The stakes are high, and the battles? Well, they’re fiercer than my morning coffee! ☕⚔️
+Welcome to **Monster Kingdom** — a third-person action adventure built in **Unreal Engine 5**, where chaos reigns and the castle walls echo with the clash of steel and roars of monsters. Choose your weapon, brace yourself for relentless combat, and fight your way through enemies who definitely skipped charm school.
 
-### **Here’s what you can expect:**
-- **⚔️ Third-Person Castle Combat:** Dive into epic battles as you fend off hordes of monsters in a castle setting. You know, the usual Tuesday afternoon.
-- **🔄 Weapon Choices:** Will you wield the mighty axe or a sharp sword? The choice is yours, and trust me, they both have very different ways of making a monster feel very sorry! 🪓⚔️
-- **👹 Advanced Enemy AI:** These monsters don’t just attack—they team up and strategize like they’re prepping for a game of chess. Good luck getting through that! 🤖💥
-- **❤️‍🩹 Health & Damage System:** Every hit counts—attack or be attacked. And yes, your health bar will definitely not be your best friend here. 💔💪
-- **🔨 Weapon Mechanics:** Swinging a massive hammer or slicing through foes with a sword has never felt so gratifying. Who knew virtual violence could be so satisfying? 💥🔪
+---
 
-### **Key Learnings:**
-- 🎮 Mastered core gameplay mechanics using Blueprints and C++.
-- 🏃‍♂️ Smooth character and monster movement for that extra dose of realism (or chaos, depending on how you play).
-- 🎥 Developed fluid animations that bring characters and monsters to life—because who wants to fight stiff opponents, right?
-- 🧠 Built an advanced AI system to keep players on their toes. Just what I need: more surprises!
-- 🔄 Game restart functionality for those “oops, I definitely didn’t mean to walk into that monster” moments. 🎉
+## 🎮 Gameplay Highlights
 
-This project reminded me why I love game development—the thrill of overcoming challenges, the joy of creating something fun, and those moments where you just shake your head and laugh. I’m definitely looking forward to the next adventure (after some much-needed sleep)! 🌟💡
+- **⚔️ Castle Combat**
+  - Engage in intense third-person melee combat within a massive, danger-filled medieval castle.
+
+- **🪓 Weapon Selection**
+  - Choose between different weapons like a mighty axe or a swift sword—each with its own unique feel and attack style.
+
+- **👹 Smart Enemy AI**
+  - Monsters use advanced AI and group tactics to corner and challenge you. This isn’t your average dungeon crawl.
+
+- **❤️ Health & Damage System**
+  - Survival requires smart movement and precise timing. One wrong move, and your health bar takes the hit.
+
+- **🔨 Weapon Mechanics**
+  - Each swing and strike is responsive and satisfying, designed to make every hit feel earned.
+
+---
+
+## 🧠 What I Learned
+
+- **🎮 Gameplay Implementation**
+  - Developed the core mechanics with both Blueprints and C++ to ensure flexibility and performance.
+
+- **🏃‍♂️ Character & Enemy Movement**
+  - Fine-tuned motion for fluid and immersive combat, making every encounter feel alive.
+
+- **🎥 Animation Systems**
+  - Integrated animation blueprints for player and enemy actions, enhancing feedback and realism.
+
+- **🧠 AI System Design**
+  - Built Behavior Tree-based AI to create engaging, unpredictable monster behaviors.
+
+- **🔁 Game Restart Functionality**
+  - Designed a smooth restart system for when players (inevitably) get overwhelmed.
+
+---
+
+## 🌟 Final Thoughts
+
+**Monster Kingdom** tested both my technical skills and creative stamina. From system architecture to animation polish, every monster slain taught me something new. It’s been a rewarding journey—filled with late nights, epic bugs, and that one moment when the monster AI got *too* smart.
+
+Stay tuned for the next quest—and maybe a nap in between. 😄
+
+[![Watch the video](https://img.youtube.com/vi/_8WCMwCWB4E/maxresdefault.jpg)](https://youtu.be/_8WCMwCWB4E)
+### [Gameplay Video](https://youtu.be/_8WCMwCWB4E)
 
 ![Monster_Kingdom_4](https://github.com/user-attachments/assets/22d94491-c37a-4c49-b82d-6e2055620d0f)
 
