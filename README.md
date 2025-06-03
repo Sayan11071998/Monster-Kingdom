@@ -1,52 +1,50 @@
-# 👑🚀 Monster Kingdom 🚀👑
+# 🚀 Monster Kingdom
 
-Welcome to **Monster Kingdom** — a third-person action adventure built in **Unreal Engine 5**, where chaos reigns and the castle walls echo with the clash of steel and roars of monsters. Choose your weapon, brace yourself for relentless combat, and fight your way through enemies who definitely skipped charm school.
-
----
-
-## 🎮 Gameplay Highlights
-
-- **⚔️ Castle Combat**
-  - Engage in intense third-person melee combat within a massive, danger-filled medieval castle.
-
-- **🪓 Weapon Selection**
-  - Choose between different weapons like a mighty axe or a swift sword—each with its own unique feel and attack style.
-
-- **👹 Smart Enemy AI**
-  - Monsters use advanced AI and group tactics to corner and challenge you. This isn’t your average dungeon crawl.
-
-- **❤️ Health & Damage System**
-  - Survival requires smart movement and precise timing. One wrong move, and your health bar takes the hit.
-
-- **🔨 Weapon Mechanics**
-  - Each swing and strike is responsive and satisfying, designed to make every hit feel earned.
+**Monster Kingdom** is a third-person action game built in **Unreal Engine 5**, set in a dangerous castle overrun by monsters. Players must choose their weapon, battle intelligently designed enemies, and survive challenging encounters across an atmospheric medieval environment.
 
 ---
 
-## 🧠 What I Learned
+## Game Features
 
-- **🎮 Gameplay Implementation**
-  - Developed the core mechanics with both Blueprints and C++ to ensure flexibility and performance.
+### Third-Person Castle Combat  
+Engage in fast-paced melee battles inside a sprawling castle environment. Timing, movement, and strategy are essential for survival.
 
-- **🏃‍♂️ Character & Enemy Movement**
-  - Fine-tuned motion for fluid and immersive combat, making every encounter feel alive.
+### Weapon Choices  
+Choose between distinct weapons such as an axe or a sword—each offering a unique combat experience with varied attack patterns and damage.
 
-- **🎥 Animation Systems**
-  - Integrated animation blueprints for player and enemy actions, enhancing feedback and realism.
+### Advanced Enemy AI  
+Enemies coordinate and adapt using behavior trees and blackboards. Expect strategic flanking, timing-based attacks, and group behavior.
 
-- **🧠 AI System Design**
-  - Built Behavior Tree-based AI to create engaging, unpredictable monster behaviors.
+### Health & Damage System  
+Both players and enemies have defined health values. Combat outcomes are determined by smart decisions and well-timed attacks.
 
-- **🔁 Game Restart Functionality**
-  - Designed a smooth restart system for when players (inevitably) get overwhelmed.
+### Weapon Mechanics  
+Designed satisfying melee systems with responsive animations and impactful collisions to give players meaningful feedback during combat.
 
 ---
 
-## 🌟 Final Thoughts
+## Key Learnings
 
-**Monster Kingdom** tested both my technical skills and creative stamina. From system architecture to animation polish, every monster slain taught me something new. It’s been a rewarding journey—filled with late nights, epic bugs, and that one moment when the monster AI got *too* smart.
+- **Core Gameplay Development**  
+  Implemented core mechanics using Blueprints and C++, blending rapid iteration with engine-level performance.
 
-Stay tuned for the next quest—and maybe a nap in between. 😄
+- **Smooth Character & Enemy Movement**  
+  Built movement systems that support responsive player control and believable enemy motion.
+
+- **Animation Integration**  
+  Created and synchronized animation blueprints for both the player and enemies to enhance combat realism.
+
+- **AI Behavior Systems**  
+  Designed complex enemy behavior using Unreal's AI tools, including perception systems and decision-making logic.
+
+- **Game Flow & Restart Logic**  
+  Added level restart and retry mechanics to support smooth gameplay loops and recovery from defeat.
+
+---
+
+## Conclusion
+
+**Monster Kingdom** was a challenging and rewarding experience that pushed me to integrate animation, AI, combat design, and player feedback systems into a cohesive game. Through building this project, I deepened my understanding of Unreal Engine's systems and
 
 [![Watch the video](https://img.youtube.com/vi/_8WCMwCWB4E/maxresdefault.jpg)](https://youtu.be/_8WCMwCWB4E)
 ### [Gameplay Video](https://youtu.be/_8WCMwCWB4E)
