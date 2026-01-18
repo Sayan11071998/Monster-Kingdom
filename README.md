@@ -56,17 +56,20 @@ flowchart TD
     WeaponBoxCollision -->|Overlap| EnemyDamage
     EnemyAttackBox -->|Overlap| PlayerDamage
     
-    classDef playerStyle fill:#E6E6FA,stroke:#333,stroke-width:2px
-    classDef enemyStyle fill:#FFE6F0,stroke:#333,stroke-width:2px
-    classDef detectionStyle fill:#E0F0FF,stroke:#333,stroke-width:2px
-    classDef collisionStyle fill:#E0FFE0,stroke:#333,stroke-width:2px
-    classDef combatStyle fill:#FFF9E0,stroke:#333,stroke-width:2px
+    classDef pinkStyle fill:#FFE6F0,stroke:#333,stroke-width:2px
+    classDef purpleStyle fill:#E6E6FA,stroke:#333,stroke-width:2px
+    classDef blueStyle fill:#D4E6F1,stroke:#333,stroke-width:2px
+    classDef greenStyle fill:#D5F4E6,stroke:#333,stroke-width:2px
+    classDef yellowBg fill:#FFFACD,stroke:#333,stroke-width:2px
     
-    class PlayerInput,LMBAttack,MovementState,SprintRunNormal playerStyle
-    class CombatSphere,AttackTimer,EnemyAttack,EnemyAttackBox enemyStyle
-    class DetectSphere,AIController,Pathfinding detectionStyle
-    class WeaponBoxCollision collisionStyle
-    class EnemyDamage,EnemyHealthCheck,PlayerDamage,PlayerHealthCheck combatStyle
+    class CombatSphere,EnemyAttackBox pinkStyle
+    class PlayerInput,LMBAttack,MovementState,SprintRunNormal,AttackTimer,EnemyAttack,AIController,Pathfinding,EnemyDamage,EnemyHealthCheck,PlayerDamage,PlayerHealthCheck purpleStyle
+    class DetectSphere blueStyle
+    class WeaponBoxCollision greenStyle
+    
+    style PlayerSystem fill:#FFFACD,stroke:#333,stroke-width:2px
+    style EnemySystem fill:#FFFACD,stroke:#333,stroke-width:2px
+    style CombatFlow fill:#FFFACD,stroke:#333,stroke-width:2px
 ```
 
 ---
