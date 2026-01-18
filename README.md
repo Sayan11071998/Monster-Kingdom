@@ -12,7 +12,62 @@ I built this project using C++ for core gameplay systems to practice object-orie
 
 The collision system uses sphere components for detection ranges and box components for damage volumes. I connected these through delegate-based overlap events, keeping classes loosely coupled while allowing them to communicate. For instance, Enemy detects the player through DetectSphere but doesn't directly control damage - instead it enables collision detection flags that AttackHitBox checks independently.
 
-![System Architecture](mermaid-diagram-2026-01-03T14-47-56.png)
+```mermaid
+flowchart TD
+    subgraph PlayerSystem["Player System"]
+        PlayerInput[Player Input]
+        LMBAttack[LMB Attack]
+        MovementState[Movement State]
+        WeaponBoxCollision[Weapon Box Collision]
+        SprintRunNormal[Sprint/Run/Normal]
+        
+        PlayerInput --> LMBAttack
+        PlayerInput --> MovementState
+        LMBAttack --> WeaponBoxCollision
+        MovementState --> SprintRunNormal
+    end
+    
+    subgraph EnemySystem["Enemy System"]
+        CombatSphere[Combat Sphere<br/>75 units]
+        DetectSphere[Detect Sphere<br/>600 units]
+        AttackTimer[Attack Timer]
+        AIController[AI Controller]
+        EnemyAttack[Enemy Attack]
+        Pathfinding[Pathfinding]
+        EnemyAttackBox[Enemy Attack Box]
+        
+        CombatSphere --> AttackTimer
+        DetectSphere --> AIController
+        AIController --> Pathfinding
+        AttackTimer --> EnemyAttack
+        EnemyAttack --> EnemyAttackBox
+    end
+    
+    subgraph CombatFlow["Combat Flow"]
+        EnemyDamage[Enemy Damage]
+        EnemyHealthCheck[Enemy Health Check]
+        PlayerDamage[Player Damage]
+        PlayerHealthCheck[Player Health Check]
+        
+        EnemyDamage --> EnemyHealthCheck
+        PlayerDamage --> PlayerHealthCheck
+    end
+    
+    WeaponBoxCollision -->|Overlap| EnemyDamage
+    EnemyAttackBox -->|Overlap| PlayerDamage
+    
+    classDef playerStyle fill:#E6E6FA,stroke:#333,stroke-width:2px
+    classDef enemyStyle fill:#FFE6F0,stroke:#333,stroke-width:2px
+    classDef detectionStyle fill:#E0F0FF,stroke:#333,stroke-width:2px
+    classDef collisionStyle fill:#E0FFE0,stroke:#333,stroke-width:2px
+    classDef combatStyle fill:#FFF9E0,stroke:#333,stroke-width:2px
+    
+    class PlayerInput,LMBAttack,MovementState,SprintRunNormal playerStyle
+    class CombatSphere,AttackTimer,EnemyAttack,EnemyAttackBox enemyStyle
+    class DetectSphere,AIController,Pathfinding detectionStyle
+    class WeaponBoxCollision collisionStyle
+    class EnemyDamage,EnemyHealthCheck,PlayerDamage,PlayerHealthCheck combatStyle
+```
 
 ---
 
