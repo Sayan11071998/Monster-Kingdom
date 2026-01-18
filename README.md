@@ -67,9 +67,9 @@ flowchart TD
     class DetectSphere blueStyle
     class WeaponBoxCollision greenStyle
     
-    style PlayerSystem fill:#FFFACD,stroke:#333,stroke-width:2px
-    style EnemySystem fill:#FFFACD,stroke:#333,stroke-width:2px
-    style CombatFlow fill:#FFFACD,stroke:#333,stroke-width:2px
+    style PlayerSystem fill:#000000,stroke:#333,stroke-width:2px
+    style EnemySystem fill:#000000,stroke:#333,stroke-width:2px
+    style CombatFlow fill:#000000,stroke:#333,stroke-width:2px
 ```
 
 ---
