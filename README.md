@@ -103,51 +103,26 @@ flowchart TD
   - Attack State Machine Both player and enemy attacks use AnimMontages with boolean flags to control hit detection. When the player presses LMB, the code plays a random attack animation and sets bCanDetectDamageCollision = true. The weapon's AttackHitBox only registers hits when this flag is active, preventing damage during windup or recovery frames.
   - I struggled with multiple hits per swing - a single attack would deal damage repeatedly during one animation. The issue was not resetting the flag after the first hit. Solution: set bCanDetectDamageCollision = false immediately in the overlap callback. This makes damage frame-perfect but single-hit-per-attack.
 
-### Weapon Pickup System
-
-Weapons spawn as actors with a SphereCollision for pickup detection. They rotate continuously until `Used` becomes true. When the player overlaps the sphere, the weapon attaches to `RightHandSocket`, stops rotating, and adds its AttackHitBox to the player's overlap delegate list. This means the player doesn't need to know about weapon internals - weapons register themselves when equipped.
-```cpp
-void AWeapon::OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, 
-    AActor* OtherActor, UPrimitiveComponent* OtherComp, 
-    int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-    if (OtherActor)
-    {
-        AMainCharacter* Main = Cast<AMainCharacter>(OtherActor);
-        if (Main)
-        {
-            Main->PickupWeapon(this);
-            Used = true;
-        }
-    }
-}
-```
+* ### Weapon Pickup System
+    - Weapons spawn as actors with a SphereCollision for pickup detection. They rotate continuously until `Used` becomes true. When the player overlaps the sphere, the weapon attaches to `RightHandSocket`, stops rotating, and adds its AttackHitBox to the player's overlap delegate list. This means the player doesn't need to know about weapon internals - weapons register themselves when equipped.
 
 ---
 
 ## Technical Challenges
 
-**AI Pathfinding State:** Early on, enemies would get stuck chasing after the player left DetectSphere because I wasn't clearing `TargetChar` reference on overlap end. Added nullptr check and `StopMovement()` call in `DetectSphereOnEndOverlap` to fix.
+- **AI Pathfinding State:** Early on, enemies would get stuck chasing after the player left DetectSphere because I wasn't clearing `TargetChar` reference on overlap end. Added nullptr check and `StopMovement()` call in `DetectSphereOnEndOverlap` to fix.
 
-**Movement During Attacks:** Both player and enemy could move while attacking because I was only checking animation state, not the `bIsAttacking` flag in movement input. Added guard clauses in `MoveForward/MoveRight` that block input when attacking.
+- **Movement During Attacks:** Both player and enemy could move while attacking because I was only checking animation state, not the `bIsAttacking` flag in movement input. Added guard clauses in `MoveForward/MoveRight` that block input when attacking.
 
-**Sprint State Management:** Sprint would activate even when standing still, causing animation issues. Added velocity check in `SprintKeyDown()` - sprint only activates if `GetCharacterMovement()->Velocity.Size() > 0`.
-```cpp
-void AMainCharacter::SprintKeyDown()
-{
-    if (GetCharacterMovement()->Velocity.Size() > 0)
-    {
-        bSprinting = true;
-        GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
-    }
-}
-```
+- **Sprint State Management:** Sprint would activate even when standing still, causing animation issues. Added velocity check in `SprintKeyDown()` - sprint only activates if `GetCharacterMovement()->Velocity.Size() > 0`.
 
 ---
 
 ## What I Learned
 
 Collision-based AI is simpler to implement than behavior trees for basic enemies but harder to debug - I spent time tracking down why enemies weren't attacking until I realized CombatSphere radius was too small. Boolean flag management for hit detection taught me about frame-perfect logic and why fighting games disable collision during certain frames. The sphere-based detection zones naturally create difficulty scaling - tighter CombatSphere means players must get closer before enemies attack.
+
+---
 
 [![Watch the video](https://img.youtube.com/vi/_8WCMwCWB4E/maxresdefault.jpg)](https://youtu.be/_8WCMwCWB4E)
 ### [Gameplay Video](https://youtu.be/_8WCMwCWB4E)
