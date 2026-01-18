@@ -76,45 +76,32 @@ flowchart TD
 
 ## Key Technical Systems
 
-### Detection Zone AI
-
-Enemies use nested collision spheres to create behavior zones. The outer DetectSphere (600 unit radius) triggers AIController pathfinding toward the player. When the player enters the inner CombatSphere (75 units), the enemy stops moving and queues an attack with randomized timing between 0.2-0.7 seconds using timers.
-
-I had the AI continue chasing during attacks initially, causing enemies to slide while playing attack animations. The fix was checking `bAttacking` in `MoveToTarget()` and calling `StopMovement()` when `Attack()` fires. When `AttackEnded()` executes, I check if the player is still in CombatSphere - if yes, queue another attack; if no, resume pathfinding.
-```cpp
-void AEnemy::MoveToTarget(AActor* Target)
-{
-    if (bAttacking) return;
-    
-    if (AIController)
-    {
-        FAIMoveRequest MoveRequest;
-        MoveRequest.SetGoalActor(Target);
-        MoveRequest.SetAcceptanceRadius(5.0f);
-        AIController->MoveTo(MoveRequest);
-    }
-}
-```
-
-### Attack State Machine
-
-Both player and enemy attacks use AnimMontages with boolean flags to control hit detection. When the player presses LMB, the code plays a random attack animation and sets `bCanDetectDamageCollision = true`. The weapon's AttackHitBox only registers hits when this flag is active, preventing damage during windup or recovery frames.
-
-I struggled with multiple hits per swing - a single attack would deal damage repeatedly during one animation. The issue was not resetting the flag after the first hit. Solution: set `bCanDetectDamageCollision = false` immediately in the overlap callback. This makes damage frame-perfect but single-hit-per-attack.
-```cpp
-void AMainCharacter::Attack()
-{
-    if (!bAttacking)
-    {
-        bAttacking = true;
-        bCanDetectDamageCollision = true;
+* ### Detection Zone AI
+    - Enemies use nested collision spheres to create behavior zones. The outer DetectSphere (600 unit radius) triggers AIController pathfinding toward the player. When the player enters the inner CombatSphere (75 units), the enemy stops moving and queues an attack with randomized timing between 0.2-0.7 seconds using timers.
+    - I had the AI continue chasing during attacks initially, causing enemies to slide while playing attack animations. The fix was checking `bAttacking` in `MoveToTarget()` and calling `StopMovement()` when `Attack()` fires. When `AttackEnded()` executes, I check if the player is still in CombatSphere - if yes, queue another attack; if no, resume pathfinding.
+  ```cpp
+      void AEnemy::AttackEnded()
+        {
+            bAttacking = false;
         
-        int32 Section = FMath::RandRange(0, 2);
-        UAnimMontage* Montage = AttackMontages[Section];
-        PlayAnimMontage(Montage);
-    }
-}
-```
+            if (bTargetInAttackRange)
+            {
+                float AttackDelay = FMath::RandRange(AttackDelayMin, AttackDelayMax);
+                GetWorldTimerManager().SetTimer(
+                    AttackTimer,
+                    this,
+                    &AEnemy::Attack,
+                    AttackDelay
+                );
+            }
+            else
+            {
+                MoveToTarget();
+            }
+        }
+  ```
+  - Attack State Machine Both player and enemy attacks use AnimMontages with boolean flags to control hit detection. When the player presses LMB, the code plays a random attack animation and sets bCanDetectDamageCollision = true. The weapon's AttackHitBox only registers hits when this flag is active, preventing damage during windup or recovery frames.
+  - I struggled with multiple hits per swing - a single attack would deal damage repeatedly during one animation. The issue was not resetting the flag after the first hit. Solution: set bCanDetectDamageCollision = false immediately in the overlap callback. This makes damage frame-perfect but single-hit-per-attack.
 
 ### Weapon Pickup System
 
