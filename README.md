@@ -56,11 +56,11 @@ flowchart TD
     WeaponBoxCollision -->|Overlap| EnemyDamage
     EnemyAttackBox -->|Overlap| PlayerDamage
     
-    classDef pinkStyle fill:#FFE6F0,stroke:#333,stroke-width:2px
-    classDef purpleStyle fill:#E6E6FA,stroke:#333,stroke-width:2px
-    classDef blueStyle fill:#D4E6F1,stroke:#333,stroke-width:2px
-    classDef greenStyle fill:#D5F4E6,stroke:#333,stroke-width:2px
-    classDef yellowBg fill:#FFFACD,stroke:#333,stroke-width:2px
+    classDef pinkStyle fill:#000000,stroke:#333,stroke-width:2px
+    classDef purpleStyle fill:#000000,stroke:#333,stroke-width:2px
+    classDef blueStyle fill:#000000,stroke:#333,stroke-width:2px
+    classDef greenStyle fill:#000000,stroke:#333,stroke-width:2px
+    classDef yellowBg fill:#000000,stroke:#333,stroke-width:2px
     
     class CombatSphere,EnemyAttackBox pinkStyle
     class PlayerInput,LMBAttack,MovementState,SprintRunNormal,AttackTimer,EnemyAttack,AIController,Pathfinding,EnemyDamage,EnemyHealthCheck,PlayerDamage,PlayerHealthCheck purpleStyle
